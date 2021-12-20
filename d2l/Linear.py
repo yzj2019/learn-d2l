@@ -1,5 +1,10 @@
 import torch
+from torch.utils import data
 
+def load_array(data_arrays, batch_size, is_train=True):
+    '''利用data.TensorDataset构建dataset，is_train代表是否为训练集，是的话需要shuffle'''
+    dataset = data.TensorDataset(*data_arrays)
+    return data.DataLoader(dataset, batch_size, shuffle=is_train)
 
 def linreg(X, w, b):  #@save
     """线性回归模型"""
