@@ -21,13 +21,19 @@ class Animator:  #@save
 
     def set_axes(self, ax, xlabel, ylabel, xlim, ylim, xscale, yscale, legend):
         '''设置，待测试'''
-        ax.set_xlabel(xlabel)
-        ax.set_ylabel(ylabel)
-        ax.set_xlim(xlim)
-        ax.set_ylim(ylim)
+        if xlabel:
+            ax.set_xlabel(xlabel)
+        if ylabel:
+            ax.set_ylabel(ylabel)
+        if xlim:
+            ax.set_xlim(xlim)
+        if ylim:
+            ax.set_ylim(ylim)
         ax.set_xscale(xscale)
         ax.set_yscale(yscale)
-        ax.legend(legend)
+        if legend:
+            ax.legend(legend)
+        ax.grid()
 
 
     def add(self, x, y):

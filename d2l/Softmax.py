@@ -68,7 +68,7 @@ def train_epoch_ch3(net, train_iter, loss, updater):  #@save
 
 def train_ch3(net, train_iter, test_iter, loss, num_epochs, updater):  #@save
     """训练模型（定义见第3章）"""
-    animator = utils.Animator(xlabel='epoch', xlim=[1, num_epochs], ylim=[0.3, 0.9],
+    animator = utils.Animator(xlabel='epoch', xlim=[1, num_epochs],
                         legend=['train loss', 'train acc', 'test acc'])
     for epoch in range(num_epochs):
         # 逐个epoch迭代
