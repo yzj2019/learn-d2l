@@ -36,7 +36,7 @@ def bbox_corner_to_rect(bbox, color):
         fill=False, edgecolor=color, linewidth=2)
 
 def bbox_center_to_rect(bbox, color):
-    '''将单个边界框(中心x,中心y,右下x,右下y)格式转换成matplotlib格式，bbox为向量'''
+    '''将单个边界框(中心x,中心y,宽度,高度)格式转换成matplotlib格式，bbox为向量'''
     # ((左上x,左上y),宽,高)
     return plt.Rectangle(
         xy=(bbox[0] - 0.5 * bbox[2], bbox[1] - 0.5 * bbox[3]), width=bbox[2], height=bbox[3],
