@@ -196,6 +196,8 @@ conda install -c conda-forge opencv -y
 conda install tqdm -y
 pip install pyyaml
 conda install -c conda-forge scipy -y
+conda install -c conda-forge mandb -y
+conda install -c conda-forge tensorboard -y
 
 # soft link your dataset, make sure '../coco' in yolo can get your coco dataset
 ln -s /data/workspace/dataset/MSCOCO/coco/ ~/coco
