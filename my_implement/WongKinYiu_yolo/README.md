@@ -192,7 +192,7 @@ cd pytorch_wavelets
 pip install .
 
 # install requirements
-conda install -c conda-forge opencv tqdm pyyaml scipy wandb tensorboard -y
+conda install -c conda-forge opencv tqdm pyyaml scipy wandb tensorboard pycocotools -y
 
 # soft link your dataset, make sure '../coco' in yolo can get your coco dataset
 ln -s /data/workspace/dataset/MSCOCO/coco/ ~/coco
