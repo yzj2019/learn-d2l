@@ -13,7 +13,12 @@
   - 查全率recall：TP / (TP+FN)
 - 对应到目标检测中：
   - 给定IoU_threshold，若预测框(True)和真实框的IOU大于阈值，则认为是positive的
-  - AP: Precision-Recall曲线下方面积?
+  - P-R曲线：
+    - 将每个提议框，赋给一个真实框
+    - 给定IoU_threshold，按前述方法判定positive
+    - 将提议框按置信度从高到低排序，按顺序逐个加入precision、recall的计算中，每加入一个获得一对P-R值，构成P-R曲线
+  - AP：Precision-Recall曲线下方面积
+    - AP_11、AP_all：详见[参考](http://t.zoukankan.com/itmorn-p-14193729.html)
   - 算AP时，对每个类别分别计算，然后按类别做平均
   - AP：阈值从0.5到0.95，每隔0.05取一次值，算AP后做平均
   - $AP^{IoU=.50}$：阈值取0.5时的AP
