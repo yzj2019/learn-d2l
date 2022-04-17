@@ -11,7 +11,7 @@
 - 评价：
   - 查准率precision：TP / (TP+FP)
   - 查全率recall：TP / (TP+FN)
-- 对应到目标检测中：
+- 对应到目标检测中：可以参考[这篇](https://cloud.google.com/vision/automl/docs/beginners-guide?authuser=1#how_do_i_interpret_the_precision-recall_curves)
   - 给定IoU_threshold，若预测框(True)和真实框的IOU大于阈值，则认为是positive的
   - P-R曲线：
     - 将每个提议框，赋给一个真实框
