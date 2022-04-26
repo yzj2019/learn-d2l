@@ -197,5 +197,6 @@ conda install -c conda-forge opencv tqdm pyyaml scipy wandb tensorboard pycocoto
 # soft link your dataset, make sure '../coco' in yolo can get your coco dataset
 ln -s /data/workspace/dataset/MSCOCO/coco/ ~/coco
 ln -s /data/workspace/dataset/kitti_2d_detection/ ~/kitti_2d_detection
+ln -s /data/workspace/dataset/kitti_raw_data/ ~/kitti_raw_data
 ```
 
