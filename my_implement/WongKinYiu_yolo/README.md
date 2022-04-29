@@ -193,10 +193,12 @@ pip install .
 
 # install requirements
 conda install -c conda-forge opencv tqdm pyyaml scipy wandb tensorboard pycocotools -y
+# if you want to use it with OC_SORT, you need to install
+# conda install -c conda-forge easydict filterpy -y
 
 # soft link your dataset, make sure '../coco' in yolo can get your coco dataset
 ln -s /data/workspace/dataset/MSCOCO/coco/ ~/coco
 ln -s /data/workspace/dataset/kitti_2d_detection/ ~/kitti_2d_detection
-ln -s /data/workspace/dataset/kitti_raw_data/ ~/kitti_raw_data
+ln -s /data/workspace/dataset/kitti_rawdata/ ~/kitti_rawdata
 ```
 
